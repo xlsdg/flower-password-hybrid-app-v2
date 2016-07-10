@@ -3,23 +3,31 @@ export default function routerInit(router) {
     router.map({
         // 首页
         '/':{
-            name: 'index',
-            component: require('./views/index.vue')
+            'name': 'index',
+            'component': function(reslove){
+                return require(['./views/index.vue'], reslove);
+            }
         },
         // 关于
         '/about':{
-            name: 'about',
-            component: require('./views/about.vue')
+            'name': 'about',
+            'component': function(reslove){
+                return require(['./views/about.vue'], reslove);
+            }
         },
         // 设置
         '/setting':{
-            name: 'setting',
-            component: require('./views/setting.vue')
+            'name': 'setting',
+            'component': function(reslove){
+                return require(['./views/setting.vue'], reslove);
+            }
         },
         // 404 页
         '*': {
-            name: '404',
-            component: require('./views/404.vue')
+            'name': '404',
+            'component': function(reslove){
+                return require(['./views/404.vue'], reslove);
+            }
         }
     });
 
