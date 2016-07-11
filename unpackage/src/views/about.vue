@@ -6,15 +6,19 @@
 <script type="text/babel">
     export default {
         name: 'about',
-        components: {
-        },
+        components: {},
+        props: {},
         data () {
             return {};
         },
-        created () {
-        },
-        methods: {
-        }
+        methods: {},
+        created () {},
+        beforeCompile () {},
+        compiled () {},
+        ready () {},
+        beforeDestroy () {},
+        destroyed () {},
+        watch: {}
     };
 </script>
 
