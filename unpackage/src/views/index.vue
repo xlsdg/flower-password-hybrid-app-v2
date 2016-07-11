@@ -57,7 +57,7 @@
 </script>
 
 <link rel="stylesheet" href="awesomplete.css" />
-<style scoped>
+<style lang="less" scoped>
     header, header h1, header i {
         color: #fff;
         background-color: #168bc3;
