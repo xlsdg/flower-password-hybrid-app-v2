@@ -33,25 +33,26 @@
 </template>
 
 <script type="text/babel">
-    import Awesomplete from 'awesomplete';
+    // import Awesomplete from 'awesomplete';
     import {fpCode} from '../libs/flowerpassword';
     export default {
-        name: 'index',
-        components: {
-            Awesomplete
+        'name': 'index',
+        'components': {
+            'Awesomplete': require('awesomplete')
         },
-        props: {},
+        'props': {},
         data () {
             return {};
         },
-        methods: {},
+        'computed': {},
+        'methods': {},
         created () {},
         beforeCompile () {},
         compiled () {},
         ready () {},
         beforeDestroy () {},
         destroyed () {},
-        watch: {}
+        'watch': {}
     };
 </script>
 

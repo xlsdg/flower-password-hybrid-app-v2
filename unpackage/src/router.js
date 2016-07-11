@@ -2,30 +2,30 @@ export default function routerInit(router) {
     //路由表
     router.map({
         // 首页
-        '/':{
+        '/': {
             'name': 'index',
-            'component': function(reslove){
+            'component': function(reslove) {
                 return require(['./views/index.vue'], reslove);
             }
         },
         // 关于
-        '/about':{
+        '/about': {
             'name': 'about',
-            'component': function(reslove){
+            'component': function(reslove) {
                 return require(['./views/about.vue'], reslove);
             }
         },
         // 设置
-        '/setting':{
+        '/setting': {
             'name': 'setting',
-            'component': function(reslove){
+            'component': function(reslove) {
                 return require(['./views/setting.vue'], reslove);
             }
         },
         // 404 页
         '*': {
             'name': '404',
-            'component': function(reslove){
+            'component': function(reslove) {
                 return require(['./views/404.vue'], reslove);
             }
         }
